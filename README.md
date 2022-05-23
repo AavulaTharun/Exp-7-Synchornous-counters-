@@ -123,13 +123,13 @@ endmodule
 
 ## TRUTH TABLE 
 ### Up counter:
-![up counter  table](https://user-images.githubusercontent.com/93427201/169740529-a134adbf-2f66-4dd6-b47e-2acf4f7a6996.png)
+![1 table](https://user-images.githubusercontent.com/93427201/169741278-09a4bfa6-4903-419b-a3f1-676970b90ef4.png)
 
 
 ### Down counter:
+![2 table](https://user-images.githubusercontent.com/93427201/169741347-2f9f14ee-e10a-43a7-9d83-3f8ddbdf60c9.png)
 
-![down table](https://user-images.githubusercontent.com/93427201/169740594-d9ea255f-9cbf-4ada-9753-a57404736fb3.png)
 
 ### RESULTS 
-
+The 4 bit up and down counters has been implemented and validated the functionality.
 
