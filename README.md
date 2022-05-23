@@ -53,36 +53,68 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:Aavula Tharun 
+RegisterNumber:212221240003  
 */
+## UP COUNTER:
+### Program:
+module upcounter(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_up;
+always@(posedge CLK or posedge reset)
+begin 
+if(reset)
+counter_up<=4'd0;
+else
+counter_up<=counter_up+4'd1;
+end
+assign counter=counter_up;
+endmodule
 
 
+## DOWN COUNTER:
+### Program:
+module upcounter(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_up;
+always@(posedge CLK or posedge reset)
+begin 
+if(reset)
+counter_up<=4'd0;
+else
+counter_up<=counter_up+4'd1;
+end
+assign counter=counter_up;
+endmodule
+
+## RTL LOGIC UP COUNTER AND DOWN COUNTER  
+
+### UP counter:
+![up counter rtl](https://user-images.githubusercontent.com/93427201/169740190-82cf3127-a220-4c3f-8623-135cf1ef98fa.png)
 
 
+### Down counter:
 
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
-
-
-
-
-
-
+![downcounter rtl](https://user-images.githubusercontent.com/93427201/169740212-fa6742e9-4ce0-467c-8b03-248762bedf4d.png)
 
 
 ### TIMING DIGRAMS FOR COUNTER  
 
+### Up counter:
+![upcounter timming](https://user-images.githubusercontent.com/93427201/169740325-5d4f1648-4a8b-4e2a-bec9-5581499db083.png)
 
 
+### Down counter:
+
+![downcounter timming](https://user-images.githubusercontent.com/93427201/169740350-b25f4f3c-81b3-4b10-8cef-3fb9fb88b562.png)
 
 
-### TRUTH TABLE 
+## TRUTH TABLE 
+### Up counter:
+![up counter  table](https://user-images.githubusercontent.com/93427201/169740529-a134adbf-2f66-4dd6-b47e-2acf4f7a6996.png)
 
 
+### Down counter:
 
-
-
+![down table](https://user-images.githubusercontent.com/93427201/169740594-d9ea255f-9cbf-4ada-9753-a57404736fb3.png)
 
 ### RESULTS 
+
