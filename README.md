@@ -86,16 +86,16 @@ endmodule
 
 ## DOWN COUNTER:
 ### Program:
-module upcounter(input CLK,input reset,output[0:3]counter);
-reg[0:3]counter_up;
+module downcounter(input CLK,input reset,output[0:3]counter);
+reg[0:3]counter_down;
 always@(posedge CLK or posedge reset)
 begin 
 if(reset)
-counter_up<=4'd0;
+counter_down<=4'd0;
 else
-counter_up<=counter_up+4'd1;
+counter_down<=counter_down-4'd1;
 end
-assign counter=counter_up;
+assign counter=counter_down;
 endmodule
 ~~~
 
